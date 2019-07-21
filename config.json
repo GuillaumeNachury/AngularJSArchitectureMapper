@@ -1,0 +1,6 @@
+{
+    "project_path" : "/path/to/your/angularJS/project",
+    "scan_extension": [".js"],
+    "excluded_directories" : ["node_modules", "build"],
+    "excluded_files" : []
+}
