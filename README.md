@@ -16,3 +16,7 @@ It will generate several files into the `output` directory.
 
 ## Visualize dependencies
 Once you run `AngularJSArchitectureMapper` and got the ouput generated, just serve the `outup` folder content thru an http server and use the [AngularJS Architecture Explorer](https://github.com/GuillaumeNachury/AngularJSArchitectureExplorer)
+
+<p align="center">
+  <img width="600" src="https://github.com/GuillaumeNachury/AngularJSArchitectureExplorer/raw/master/__snapshots/explore.jpg">
+</p> 
