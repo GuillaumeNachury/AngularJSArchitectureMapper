@@ -1,4 +1,4 @@
-# AngularJSArchitectureMapper
+# AngularJS Architecture Mapper
 Analyse your AngularJS project and create a dependency graph.
 
 ## usage
