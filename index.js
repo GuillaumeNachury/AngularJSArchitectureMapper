@@ -15,6 +15,8 @@ _engine.init();
 const srcCode = [];
 //Grab the root of the project
 const rootProjectPath = path.resolve(cfg.project_path);
+//The directory to output the result files to.
+const outputDir = './output/';
 
 /* ----------- UTILS ------------ */
 const shouldSkipThisDirectory = (path) => {
@@ -78,8 +80,8 @@ console.log(`${errorCounter} invalid js files.`);
 console.log(`${unparseableCounter} files could not be parsed.`);
 
 // Make sure the output directory exists.
-!fs.existsSync('./output/') && fs.mkdirSync('./output/');
+!fs.existsSync(outputDir) && fs.mkdirSync(outputDir);
 
-fs.writeFileSync('./output/angular.json', JSON.stringify(_engine.getGraph().nodesMap));
-fs.writeFileSync('./output/lookup.json', JSON.stringify(_engine.getLookupList()));
-fs.writeFileSync('./output/analyse.json', JSON.stringify(_engine.getAnalyse()));
+fs.writeFileSync(`${outputDir}angular.json`, JSON.stringify(_engine.getGraph().nodesMap));
+fs.writeFileSync(`${outputDir}lookup.json`, JSON.stringify(_engine.getLookupList()));
+fs.writeFileSync(`${outputDir}analyse.json`, JSON.stringify(_engine.getAnalyse()));
